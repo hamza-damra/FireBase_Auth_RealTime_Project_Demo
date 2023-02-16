@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_user_details"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:layout_below="@id/text"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_mail"
+        android:layout_below="@id/edtname"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_age"
+        android:layout_below="@id/edtemail"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_data"
+        android:inputType="text"
+        android:layout_below="@id/edtage"
+        android:layout_marginTop="20dp"
+        tools:ignore="TextViewEdits" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_data"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnInsert"
+
+        tools:ignore="TextViewEdits" />
+
+
+</RelativeLayout>
